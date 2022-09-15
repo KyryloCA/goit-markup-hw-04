@@ -1,9 +1,11 @@
 :root {
-    --primary-text-color: #757575;
-    --secondary-text-color: #212121;
+    --primary-content-color: #757575;
+    --secondary-content-color: #212121;
     --accent-color: #2196f3;
     --primary-bg-color: #ffffff;
     --secondary-bg-color: #F5F4FA;
+    --icons-bg-color: #AFB1B8;
+
     /* gallery */
     --gallery-cards-gap: 30px;
     --gallery-text-wrapper-padding-top-bottom: 18px;
