@@ -5,6 +5,9 @@
     --primary-bg-color: #ffffff;
     --secondary-bg-color: #F5F4FA;
     --icons-bg-color: #AFB1B8;
+    --hero-button-color: #2196f3;
+    --hero-button-color-accent: #188CE8;
+    --hero-background-color: #C4C4C4;
 
     /* gallery */
     --gallery-cards-gap: 30px;
