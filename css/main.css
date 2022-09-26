@@ -226,7 +226,7 @@ header {
 .hero .button:hover,
 .hero .button:focus {
     background-color: var(--hero-button-color-accent);
-    cursor: pointer;
+
 }
 
 .hero h1 {
@@ -271,6 +271,9 @@ header {
 
 /* наша команда */
 /* team-galery */
+
+
+
 .gallery-flex-big {
     display: flex;
     flex-wrap: wrap;
@@ -293,6 +296,7 @@ header {
 .alternate .gallery-flex-big .item {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+    background-color: var(--primary-bg-color);
 }
 
 .gallery-flex-big .wrapper {
@@ -409,17 +413,19 @@ header {
     border: 0;
     border-radius: 4px;
 
+    cursor: pointer;
+
 }
 
 .button-hero {
     padding: 10px 32px;
     display: inline-block;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .button-hero:hover,
-.button-hero:focus {
-    cursor: pointer;
-}
+.button-hero:focus {}
 
 .button-gallery {
     padding: 6px 22px;
@@ -427,9 +433,12 @@ header {
 }
 
 
-.button-gallery:hover,
-.button-gallery:focus {
-    cursor: pointer;
+.button.secondary.button-gallery:hover,
+.button.secondary.button-gallery:focus,
+.button.primary.button-gallery:hover,
+.button.primary.button-gallery:focus {
+    color: var(--primary-bg-color);
+    background-color: var(--accent-color);
 
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
@@ -440,12 +449,13 @@ header {
 }
 
 .button.secondary {
-    color: var(--secondary-text-color);
+    color: var(--secondary-content-color);
     background-color: var(--secondary-bg-color);
 }
 
 .link p {
     color: var(--primary-content-color);
+
 }
 
 /* galery flex net*/
@@ -467,12 +477,14 @@ header {
 
 }
 
+.gallery-flex .item .link {
+    display: block;
+}
+
+
 .gallery-flex .item a:hover,
 .gallery-flex .item a:focus {
-    display: block;
-    /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); */
-    /* box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12); */
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 
@@ -596,7 +608,7 @@ footer h2 {
     font-weight: 700;
     margin-top: 0;
     margin-bottom: 20px;
-    margin-top: 10px;
+
     color: var(--primary-bg-color);
 }
 
